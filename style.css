@@ -1,4 +1,9 @@
 body {
+    background-image: url('3890cc754ec50b2cfac7611742821cfe.jpg');
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
     background-color: #e0f2ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #4a4a4a;
@@ -17,9 +22,17 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid white;
+ /*   border: 5px solid blue; */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     object-fit: cover;
+}
+
+#papai img {
+    border: 5px solid pink;
+}
+
+#mamae img {
+    border: 5px solid #6EDBF5;
 }
 
 .guest-section {
