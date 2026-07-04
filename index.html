@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Fraldas Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cloud-container">
+        <div class="cloud"><img src="pngwing.com.png" alt="Nuvem"></div>
+    </div>
+
+    <header>
+        <h1>Bem-vindo ao Mundo do Nosso Bebê!</h1>
+        <div class="parents-photos">
+            <div class="photo-frame">
+                <img src="mamae.jpg" alt="Mamãe">
+                <p>Mamãe</p>
+            </div>
+            <div class="photo-frame">
+                <img src="papai.jpg" alt="Papai">
+                <p>Papai</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Campo para identificação do convidado -->
+        <section class="guest-section">
+            <label for="guest-name"><strong>Digite seu nome para escolher uma fralda:</strong></label>
+            <input type="text" id="guest-name" placeholder="Ex: Maria Silva" required>
+        </section>
+
+        <section class="counter-section">
+            <h2>Escolha um tamanho para doar:</h2>
+            <div class="options">
+                <div class="card" id="card-p">
+                    <h3>Tamanho P</h3>
+                    <p>Restam: <span id="count-p">5</span></p>
+                    <button onclick="confirmarDoacao('p')">Doar P</button>
+                </div>
+                <div class="card" id="card-m">
+                    <h3>Tamanho M</h3>
+                    <p>Restam: <span id="count-m">10</span></p>
+                    <button onclick="confirmarDoacao('m')">Doar M</button>
+                </div>
+                <div class="card" id="card-g">
+                    <h3>Tamanho G</h3>
+                    <p>Restam: <span id="count-g">10</span></p>
+                    <button onclick="confirmarDoacao('g')">Doar G</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção para listar quem já confirmou -->
+        <section class="history-section">
+            <h2>Quem já confirmou presença:</h2>
+            <ul id="contributors-list">
+                <!-- Os nomes e escolhas vão aparecer aqui dinamicamente -->
+            </ul>
+        </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
